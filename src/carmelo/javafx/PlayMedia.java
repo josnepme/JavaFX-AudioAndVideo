@@ -48,7 +48,7 @@ public class PlayMedia extends Application {
         player.setOnError(() -> System.out.println("MediaPlayer: " + player.getError().getMessage()));
         player.statusProperty().addListener((prop, oldStatus, newStatus) -> {
             // se ha producido un cambio de estado
-            System.out.println("Status cambiofrom " + oldStatus + " to " + newStatus);
+            System.out.println("Estatus cambio de " + oldStatus + " a " + newStatus);
         });
         
         // crear marcadores, son indicadores que se disparan al alcanzar el timepo definido 
