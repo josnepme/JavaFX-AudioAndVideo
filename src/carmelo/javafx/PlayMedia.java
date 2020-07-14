@@ -39,7 +39,7 @@ public class PlayMedia extends Application {
         
         //String url = getClass().getResource("audio.mp3").toExternalForm();  
         //String url = "https://www.youtube.com/embed/qGNWMcfWwPU"
-        String url = "file:///e:/videos/html.mp4";
+        String url = "file:///D:Trolls2.mp4";
         
         Media media = new Media(url);
         media.setOnError(() -> System.out.println("Media: " + media.getError().getMessage()));
@@ -48,7 +48,7 @@ public class PlayMedia extends Application {
         player.setOnError(() -> System.out.println("MediaPlayer: " + player.getError().getMessage()));
         player.statusProperty().addListener((prop, oldStatus, newStatus) -> {
             // se ha producido un cambio de estado
-            System.out.println("Status changed from " + oldStatus + " to " + newStatus);
+            System.out.println("Status cambiofrom " + oldStatus + " to " + newStatus);
         });
         
         // crear marcadores, son indicadores que se disparan al alcanzar el timepo definido 
